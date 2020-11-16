@@ -1,4 +1,13 @@
+# Next.js Template
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Shipped with following developer tools:
+
+1. [TypeScript](https://www.typescriptlang.org/)
+2. [ESLint](https://eslint.org/)
+3. [Prettier](https://prettier.io/)
+4. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
 
 ## Getting Started
 

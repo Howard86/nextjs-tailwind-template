@@ -1,7 +1,26 @@
 {
-  "name": "expense-tracker",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-template",
+  "version": "1.0.0",
+  "description": "Next.js template configured with TypeScript, ESLint, Prettier and git hooks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Howard86/nextjs-template"
+  },
+  "author": "Howard Tai <howard@howardism.dev>",
+  "license": "MIT",
+  "keywords": [
+    "template",
+    "next.js",
+    "typescript",
+    "eslint",
+    "prettier",
+    "lint-staged",
+    "husky"
+  ],
+  "bugs": {
+    "url": "https://github.com/Howard86/nextjs-template/issues"
+  },
+  "homepage": "https://github.com/Howard86/nextjs-template",
   "scripts": {
     "check": "npm run type-check && npm run lint && npm run format",
     "type-check": "tsc --noEmit",
