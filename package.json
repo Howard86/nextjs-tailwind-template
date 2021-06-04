@@ -24,8 +24,8 @@
   "scripts": {
     "check": "npm run type-check && npm run lint && npm run format",
     "type-check": "tsc --noEmit",
-    "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "format": "prettier --write \"src/**/*.(ts|tsx)\"",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
