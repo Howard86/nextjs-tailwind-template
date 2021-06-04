@@ -1,64 +1,76 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import styles from '@/styles/Home.module.css';
+import {
+  Box,
+  Container,
+  Heading,
+  Img,
+  Link,
+  SimpleGrid,
+  Text,
+} from '@chakra-ui/react';
 
 const Home: FC = () => (
-  <div className={styles.container}>
+  <Container>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main className={styles.main}>
-      <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+    <Box as="main">
+      <Heading as="h1">
+        Welcome to{' '}
+        <Link href="https://nextjs.org" isExternal>
+          Next.js!
+        </Link>
+      </Heading>
 
-      <p className={styles.description}>
-        Get started by editing{' '}
-        <code className={styles.code}>pages/index.js</code>
-      </p>
+      <Text>
+        Get started by editing <Text as="code">pages/index.js</Text>
+      </Text>
 
-      <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <SimpleGrid>
+        <Link href="https://nextjs.org/docs" isExternal>
+          <Heading as="h3">Documentation &rarr;</Heading>
+          <Text>Find in-depth information about Next.js features and API.</Text>
+        </Link>
 
-        <a href="https://nextjs.org/learn" className={styles.card}>
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
+        <Link href="https://nextjs.org/learn" isExternal>
+          <Heading as="h3">Learn &rarr;</Heading>
+          <Text>
+            Learn about Next.js in an interactive course with quizzes!
+          </Text>
+        </Link>
 
-        <a
+        <Link
           href="https://github.com/vercel/next.js/tree/master/examples"
-          className={styles.card}
+          isExternal
         >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
+          <Heading as="h3">Examples &rarr;</Heading>
+          <Text>Discover and deploy boilerplate example Next.js projects.</Text>
+        </Link>
 
-        <a
+        <Link
           href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
+          isExternal
         >
-          <h3>Deploy &rarr;</h3>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
-      </div>
-    </main>
+          <Heading as="h3">Deploy &rarr;</Heading>
+          <Text>
+            Instantly deploy your Next.js site to a public URL with Vercel.
+          </Text>
+        </Link>
+      </SimpleGrid>
+    </Box>
 
-    <footer className={styles.footer}>
-      <a
+    <Box as="footer">
+      <Link
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
+        isExternal
       >
-        Powered by{' '}
-        <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-      </a>
-    </footer>
-  </div>
+        Powered by <Img src="/vercel.svg" alt="Vercel Logo" />
+      </Link>
+    </Box>
+  </Container>
 );
 
 export default Home;
