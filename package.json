@@ -28,7 +28,8 @@
     "format": "prettier --write \"src/**/*.(ts|tsx)\"",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "^10.2.3",
