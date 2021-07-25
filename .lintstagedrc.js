@@ -1,8 +1,7 @@
 module.exports = {
+  '**/*.{js,json,md}': ['prettier . --write'],
   '**/*.{ts,tsx}': [
-    (filenames) =>
-      filenames.map((filename) => `prettier '${filename}' --write`),
-    (filenames) =>
-      filenames.length > 10 ? 'npm run lint' : `eslint ${filenames.join(' ')}`,
+    'prettier . --write',
+    (filenames) => `eslint ${filenames.join(' ')}`,
   ],
 };
