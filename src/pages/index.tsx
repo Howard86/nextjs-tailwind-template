@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
+import RouteLink from '@/components/RouteLink';
+import Image from '@/components/Image';
 import {
   Box,
   Container,
@@ -12,6 +13,9 @@ import {
 
 const Home: FC = () => (
   <Container>
+    <Box>
+      Go to <RouteLink href="/new-page">New Page</RouteLink>
+    </Box>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
