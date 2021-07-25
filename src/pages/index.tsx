@@ -1,7 +1,3 @@
-import React, { FC } from 'react';
-import Head from 'next/head';
-import RouteLink from '@/components/RouteLink';
-import Image from '@/components/Image';
 import {
   Box,
   Container,
@@ -10,8 +6,12 @@ import {
   SimpleGrid,
   Text,
 } from '@chakra-ui/react';
+import Head from 'next/head';
 
-const Home: FC = () => (
+import Image from '@/components/Image';
+import RouteLink from '@/components/RouteLink';
+
+const Home = (): JSX.Element => (
   <Container>
     <Box>
       Go to <RouteLink href="/new-page">New Page</RouteLink>

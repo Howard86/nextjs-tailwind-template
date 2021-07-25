@@ -1,6 +1,7 @@
-import React, { ReactNode } from 'react';
-import NextLink from 'next/link';
+import { ReactNode } from 'react';
+
 import { Link, LinkProps } from '@chakra-ui/react';
+import NextLink from 'next/link';
 
 interface RouteLinkProps extends LinkProps {
   href: string;
