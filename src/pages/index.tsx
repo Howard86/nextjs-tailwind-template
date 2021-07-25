@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
+import Image from 'next/image';
 import Head from 'next/head';
 import {
   Box,
   Container,
   Heading,
-  Img,
   Link,
   SimpleGrid,
   Text,
@@ -67,7 +67,8 @@ const Home: FC = () => (
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
         isExternal
       >
-        Powered by <Img src="/vercel.svg" alt="Vercel Logo" />
+        Powered by{' '}
+        <Image src="/vercel.svg" alt="Vercel Logo" width={64} height={64} />
       </Link>
     </Box>
   </Container>
