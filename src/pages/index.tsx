@@ -1,17 +1,21 @@
-import React, { FC } from 'react';
-import Head from 'next/head';
 import {
   Box,
   Container,
   Heading,
-  Img,
   Link,
   SimpleGrid,
   Text,
 } from '@chakra-ui/react';
+import Head from 'next/head';
 
-const Home: FC = () => (
+import Image from '@/components/Image';
+import RouteLink from '@/components/RouteLink';
+
+const Home = (): JSX.Element => (
   <Container>
+    <Box>
+      Go to <RouteLink href="/new-page">New Page</RouteLink>
+    </Box>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -67,7 +71,8 @@ const Home: FC = () => (
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
         isExternal
       >
-        Powered by <Img src="/vercel.svg" alt="Vercel Logo" />
+        Powered by{' '}
+        <Image src="/vercel.svg" alt="Vercel Logo" width={64} height={64} />
       </Link>
     </Box>
   </Container>
