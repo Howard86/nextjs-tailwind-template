@@ -19,13 +19,18 @@
     "node": true
   },
   "rules": {
+    "import/extensions": 0,
     "react/prop-types": 0,
     "react/jsx-props-no-spreading": 0,
     "react/react-in-jsx-scope": 0,
+    "react/require-default-props": 0,
+    "jsx-a11y/anchor-is-valid": 0,
     "@typescript-eslint/no-unused-vars": [
       2,
       { "argsIgnorePattern": "^_", "ignoreRestSiblings": true }
     ],
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "no-underscore-dangle": 0,
     "no-console": [
       2,
       {
