@@ -27,6 +27,7 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",
+    "gen:theme-typings": "chakra-cli tokens src/theme/index.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
