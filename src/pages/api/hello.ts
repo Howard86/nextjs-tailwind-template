@@ -2,8 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 export default function handler(
   _req: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse<Local.HelloApi>,
 ): void {
-  res.statusCode = 200;
-  res.json({ name: 'John Doe' });
+  res.status(200).json({ name: 'John Doe', timestamp: Date.now() });
 }

@@ -3,12 +3,18 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 import reducer from './reducer';
 
+import { localApi } from '@/services/local';
+
 const isDev = process.env.NODE_ENV !== 'production';
 
 const configureAppStore = () => {
   const store = configureStore({
     reducer,
     devTools: isDev,
+    middleware: (getDefaultMiddleware) => [
+      ...getDefaultMiddleware(),
+      localApi.middleware,
+    ],
   });
 
   if (isDev && module.hot) {
