@@ -1,6 +1,6 @@
 {
   "name": "nextjs-template",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Next.js template configured with TypeScript, Charka UI, ESLint, Prettier and git hooks",
   "repository": {
     "type": "git",
