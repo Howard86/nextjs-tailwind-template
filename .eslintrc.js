@@ -1,6 +1,7 @@
 const sharedRules = {
   'global-require': 0,
   'import/extensions': 0,
+  'import/no-import-module-exports': 0,
   'import/no-extraneous-dependencies': [2, { devDependencies: true }],
   'no-underscore-dangle': 0,
   'no-console': [
@@ -77,6 +78,7 @@ module.exports = {
         'react/jsx-props-no-spreading': 0,
         'react/react-in-jsx-scope': 0,
         'react/require-default-props': 0,
+        'react/function-component-definition': 0,
         'jsx-a11y/anchor-is-valid': 0,
         '@typescript-eslint/no-unused-vars': [
           2,
