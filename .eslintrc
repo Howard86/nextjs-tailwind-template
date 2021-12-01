@@ -1,4 +1,5 @@
 {
+  "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "simple-import-sort"],
   "extends": [
@@ -36,6 +37,12 @@
       {
         "allow": ["warn", "error"]
       }
+    ],
+    "no-restricted-syntax": [
+      2,
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
     ],
     "simple-import-sort/exports": 2,
     "simple-import-sort/imports": [
