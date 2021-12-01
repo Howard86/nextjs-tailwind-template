@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/Howard86/nextjs-template",
   "scripts": {
+    "analyze": "ANALYZE=true next build",
     "check-all": "yarn type-check && yarn lint && yarn format",
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.tsx",
