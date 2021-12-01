@@ -54,6 +54,7 @@
     "@chakra-ui/cli": "^1.5.3",
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
+    "@next/bundle-analyzer": "^12.0.4",
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.33",
     "@types/react-redux": "^7.1.20",
