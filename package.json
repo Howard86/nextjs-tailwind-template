@@ -34,6 +34,7 @@
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",
     "gen:theme-typings": "chakra-cli tokens src/theme/index.ts",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
