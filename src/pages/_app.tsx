@@ -1,16 +1,13 @@
-import { ChakraProvider } from '@chakra-ui/react';
-import type { AppProps } from 'next/app';
-import { Provider as ReduxProvider } from 'react-redux';
+import React from 'react';
 
-import store from '@/redux/store';
-import theme from '@/theme';
+import type { AppProps } from 'next/app';
+
+import GlobalProviders from '@/components/GlobalProviders';
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => (
-  <ReduxProvider store={store}>
-    <ChakraProvider resetCSS theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  </ReduxProvider>
+  <GlobalProviders>
+    <Component {...pageProps} />
+  </GlobalProviders>
 );
 
 export default App;
