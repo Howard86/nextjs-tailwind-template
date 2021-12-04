@@ -24,7 +24,7 @@ const Home = (): JSX.Element => {
         Go to <RouteLink href="/new-page">New Page</RouteLink>
         <Skeleton isLoaded={isSuccess}>
           Local API /hello responds {data?.name} called{' '}
-          {data?.timestamp || 0 - fulfilledTimeStamp}ms ago
+          {data?.timestamp || 0 - (fulfilledTimeStamp || 0)}ms ago
         </Skeleton>
       </Box>
       <Head>

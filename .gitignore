@@ -35,3 +35,6 @@ yarn-error.log*
 
 /.vscode/*
 !/.vscode/launch.json
+
+# cypress e2e recorded videos
+/cypress/videos/*
