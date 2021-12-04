@@ -38,3 +38,6 @@ yarn-error.log*
 
 # cypress e2e recorded videos
 /cypress/videos/*
+
+# tsc type-check
+tsconfig.tsbuildinfo
