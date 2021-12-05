@@ -15,10 +15,12 @@ Shipped with following developer tools:
 ### Development dependencies
 
 1. [TypeScript](https://www.typescriptlang.org/)
-2. [ESLint](https://eslint.org/) with [Airbnb config](https://github.com/iamturns/eslint-config-airbnb-typescript)
-3. [Prettier](https://prettier.io/)
-4. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
-5. [Commitlint](https://commitlint.js.org/#/)
+2. [Jest](https://jestjs.io)
+3. [Cypress](https://www.cypress.io)
+4. [ESLint](https://eslint.org/) with [Airbnb config](https://github.com/iamturns/eslint-config-airbnb-typescript)
+5. [Prettier](https://prettier.io/)
+6. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
+7. [Commitlint](https://commitlint.js.org/#/)
 
 ## Getting Started
 
