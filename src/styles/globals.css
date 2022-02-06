@@ -6,6 +6,10 @@
   #__next {
     height: 100%;
   }
+
+  a {
+    @apply link-primary;
+  }
 }
 
 @tailwind components;
