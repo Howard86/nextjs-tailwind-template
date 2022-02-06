@@ -1,11 +1,12 @@
-import { Box } from '@chakra-ui/react';
-
-import RouteLink from '@/components/RouteLink';
+import Link from 'next/link';
 
 const NewPage = (): JSX.Element => (
-  <Box>
-    Back to <RouteLink href="/">Home</RouteLink>
-  </Box>
+  <div>
+    Back to{' '}
+    <Link href="/">
+      <a>Home</a>
+    </Link>
+  </div>
 );
 
 export default NewPage;

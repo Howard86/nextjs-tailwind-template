@@ -1,0 +1,16 @@
+@tailwind base;
+
+@layer base {
+  html,
+  body,
+  #__next {
+    height: 100%;
+  }
+
+  a {
+    @apply link-primary;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;

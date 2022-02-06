@@ -1,96 +1,98 @@
-import React from 'react';
-
-import {
-  Box,
-  Container,
-  Heading,
-  Link,
-  SimpleGrid,
-  Skeleton,
-  Text,
-} from '@chakra-ui/react';
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import Image from '@/components/Image';
-import RouteLink from '@/components/RouteLink';
+import vercelLogo from '@/public/vercel.svg';
 import { useGetNameQuery } from '@/services/local';
 
-const Home = (): JSX.Element => {
-  const { data, isSuccess, fulfilledTimeStamp } = useGetNameQuery();
+const Home = () => {
+  const { data, fulfilledTimeStamp } = useGetNameQuery();
 
   return (
-    <Container>
-      <Box>
-        Go to <RouteLink href="/new-page">New Page</RouteLink>
-        <Skeleton isLoaded={isSuccess}>
-          Local API /hello responds {data?.name} called{' '}
-          {data?.timestamp || 0 - (fulfilledTimeStamp || 0)}ms ago
-        </Skeleton>
-      </Box>
+    <div className="container-center py-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Box as="main">
-        <Heading as="h1">
-          Welcome to{' '}
-          <Link href="https://nextjs.org" isExternal>
-            Next.js!
+      <main className="prose-net prose flex max-w-none flex-1 flex-col items-center justify-center px-20 text-center lg:prose-lg ">
+        <h1>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+
+        <p>
+          Get started by editing <code>pages/index.tsx</code>
+        </p>
+
+        <p>
+          Go to{' '}
+          <Link href="/new-page">
+            <a>New Page</a>
           </Link>
-        </Heading>
+        </p>
 
-        <Text>
-          Get started by editing <Text as="code">pages/index.js</Text>
-        </Text>
+        {data && fulfilledTimeStamp && (
+          <p>
+            Local API /hello responds {data.name} called{' '}
+            {fulfilledTimeStamp - data.timestamp}ms ago
+          </p>
+        )}
 
-        <SimpleGrid>
-          <Link href="https://nextjs.org/docs" isExternal>
-            <Heading as="h3">Documentation &rarr;</Heading>
-            <Text>
-              Find in-depth information about Next.js features and API.
-            </Text>
-          </Link>
-
-          <Link href="https://nextjs.org/learn" isExternal>
-            <Heading as="h3">Learn &rarr;</Heading>
-            <Text>
-              Learn about Next.js in an interactive course with quizzes!
-            </Text>
-          </Link>
-
-          <Link
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            isExternal
+        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+          <a
+            href="https://nextjs.org/docs"
+            className="mt-6 w-96 rounded-xl border px-6 pb-3 text-left no-underline hover:border-current"
           >
-            <Heading as="h3">Examples &rarr;</Heading>
-            <Text>
-              Discover and deploy boilerplate example Next.js projects.
-            </Text>
-          </Link>
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
 
-          <Link
+          <a
+            href="https://nextjs.org/learn"
+            className="mt-6 w-96 rounded-xl border px-6 pb-3 text-left no-underline hover:border-current"
+          >
+            <h3>Learn &rarr;</h3>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a
+            href="https://github.com/vercel/next.js/tree/canary/examples"
+            className="mt-6 w-96 rounded-xl border px-6 pb-3 text-left no-underline hover:border-current"
+          >
+            <h3>Examples &rarr;</h3>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            isExternal
+            className="mt-6 w-96 rounded-xl border px-6 pb-3 text-left no-underline hover:border-current"
           >
-            <Heading as="h3">Deploy &rarr;</Heading>
-            <Text>
+            <h3>Deploy &rarr;</h3>
+            <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
-            </Text>
-          </Link>
-        </SimpleGrid>
-      </Box>
+            </p>
+          </a>
+        </div>
+      </main>
 
-      <Box as="footer">
-        <Link
+      <footer className="mt-6 flex h-24 w-full items-center justify-center border-t">
+        <a
+          className="flex items-center justify-center"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          isExternal
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={64} height={64} />
-        </Link>
-      </Box>
-    </Container>
+          <Image
+            src={vercelLogo}
+            alt="Vercel Logo"
+            className="text-c ml-2 h-4"
+            height={16}
+            width={64}
+          />
+        </a>
+      </footer>
+    </div>
   );
 };
 
