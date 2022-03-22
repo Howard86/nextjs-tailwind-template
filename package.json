@@ -65,7 +65,7 @@
     "@types/testing-library__jest-dom": "^5.14.3",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.4",
     "eslint": "^8.11.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "^16.1.1",
