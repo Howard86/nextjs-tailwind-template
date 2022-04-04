@@ -1,26 +1,25 @@
-# Next.js Template
+# Next.js TailwindCSS Template
 
-This is a **highly** opinionated [Next.js](https://nextjs.org/) template bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a **highly** opinionated [Next.js](https://nextjs.org/) template bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), originally from this [nextjs-template](https://github.com/Howard86/nextjs-template).
 
 Shipped with following developer tools:
 
 ### Production dependencies
 
-1. [Chakra UI](https://chakra-ui.com)
-2. [Emotion](https://emotion.sh)
-3. [Framer Motion](https://www.framer.com/motion/)
-4. [Redux Toolkit](https://redux-toolkit.js.org)
-5. [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
+1. [daisyUI](https://daisyui.com)
+2. [Redux Toolkit](https://redux-toolkit.js.org)
+3. [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
 
 ### Development dependencies
 
-1. [TypeScript](https://www.typescriptlang.org/)
-2. [Jest](https://jestjs.io)
-3. [Cypress](https://www.cypress.io)
-4. [ESLint](https://eslint.org/) with [Airbnb config](https://github.com/iamturns/eslint-config-airbnb-typescript)
-5. [Prettier](https://prettier.io/)
-6. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
-7. [Commitlint](https://commitlint.js.org/#/)
+1. [TailwindCSS](https://tailwindcss.com) with [PostCSS](https://github.com/postcss/postcss) and [Autoprefixer](https://github.com/postcss/autoprefixer)
+2. [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+3. [TypeScript](https://www.typescriptlang.org/)
+4. [Jest](https://jestjs.io) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+5. [ESLint](https://eslint.org/) with [Airbnb config](https://github.com/iamturns/eslint-config-airbnb-typescript)
+6. [Prettier](https://prettier.io/) with [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+7. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
+8. [Commitlint](https://commitlint.js.org/#/)
 
 ## Getting Started
 
