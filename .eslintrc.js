@@ -16,6 +16,10 @@ const sharedRules = {
     'LabeledStatement',
     'WithStatement',
   ],
+  'no-param-reassign': [
+    2,
+    { props: true, ignorePropertyModificationsFor: ['state'] },
+  ],
   'simple-import-sort/exports': 2,
   'simple-import-sort/imports': [
     2,
@@ -28,10 +32,13 @@ const sharedRules = {
         ],
         // Packages. `react` related packages come first.
         ['^react$'],
-        // Internal packages.
-        ['^@?\\w'],
         // Side effect imports.
         ['^\\u0000'],
+        // Internal packages.
+        ['^@?\\w'],
+        // Absolute imports and other imports such as Vue-style `@/foo`.
+        // Anything not matched in another group.
+        ['^'],
         // Parent imports. Put `..` last.
         ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
         // Other relative imports. Put same-folder imports and `.` last.

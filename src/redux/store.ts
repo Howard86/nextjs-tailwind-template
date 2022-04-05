@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
-import reducer from './reducer';
-
 import { localApi } from '@/services/local';
+
+import reducer from './reducer';
 
 const isDev = process.env.NODE_ENV !== 'production';
 
