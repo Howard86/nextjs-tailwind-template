@@ -46,7 +46,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
     "daisyui": "^2.15.2",
-    "next": "^12.2.4",
+    "next": "^12.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.4"
@@ -54,7 +54,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^16.2.4",
-    "@next/bundle-analyzer": "^12.2.4",
+    "@next/bundle-analyzer": "^12.3.0",
     "@tailwindcss/typography": "^0.5.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.4",
@@ -69,7 +69,7 @@
     "eslint": "^8.21.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-next": "^12.2.4",
+    "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
