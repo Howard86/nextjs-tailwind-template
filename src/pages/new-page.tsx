@@ -1,12 +1,9 @@
 import Link from 'next/link';
 
-const NewPage = (): JSX.Element => (
-  <div>
-    Back to{' '}
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-  </div>
-);
-
-export default NewPage;
+export default function NewPage(): JSX.Element {
+  return (
+    <div>
+      Back to <Link href="/">Home</Link>
+    </div>
+  );
+}

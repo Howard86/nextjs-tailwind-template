@@ -5,7 +5,7 @@ import Link from 'next/link';
 import vercelLogo from '@/public/vercel.svg';
 import { useGetNameQuery } from '@/services/local';
 
-const Home = () => {
+export default function Home() {
   const { data, fulfilledTimeStamp } = useGetNameQuery();
 
   return (
@@ -25,16 +25,13 @@ const Home = () => {
         </p>
 
         <p>
-          Go to{' '}
-          <Link href="/new-page">
-            <a>New Page</a>
-          </Link>
+          Go to <Link href="/new-page">New Page</Link>
         </p>
 
         {data && fulfilledTimeStamp && (
           <p>
-            Local API /hello responds {data.name} called{' '}
-            {fulfilledTimeStamp - data.timestamp}ms ago
+            Local API /hello responds {data.data.name} called{' '}
+            {fulfilledTimeStamp - data.data.timestamp}ms ago
           </p>
         )}
 
@@ -94,6 +91,4 @@ const Home = () => {
       </footer>
     </div>
   );
-};
-
-export default Home;
+}

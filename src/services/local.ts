@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { SuccessApiResponse } from 'next-api-handler';
 
 export const localApi = createApi({
   reducerPath: 'local',
@@ -6,7 +7,9 @@ export const localApi = createApi({
     baseUrl: '/api',
   }),
   endpoints: (builder) => ({
-    getName: builder.query<Local.HelloApi, void>({ query: () => 'hello' }),
+    getName: builder.query<SuccessApiResponse<Local.HelloApi>, void>({
+      query: () => 'hello',
+    }),
   }),
 });
 
