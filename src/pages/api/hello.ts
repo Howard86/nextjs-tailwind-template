@@ -1,8 +1,7 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { RouterBuilder } from 'next-api-handler';
 
-export default function handler(
-  _req: NextApiRequest,
-  res: NextApiResponse<Local.HelloApi>,
-): void {
-  res.status(200).json({ name: 'John Doe', timestamp: Date.now() });
-}
+const router = new RouterBuilder();
+
+router.get<Local.HelloApi>(() => ({ name: 'John Doe', timestamp: Date.now() }));
+
+export default router.build();

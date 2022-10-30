@@ -1,17 +1,18 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({
   dir: './',
 });
 
-const customJestConfig = {
+const config = createJestConfig({
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
-    'test-utils': '<rootDir>/test-utils',
+    '^@/((?!public).*)$': '<rootDir>/src/$1',
+    '^test-utils$': '<rootDir>/test-utils',
   },
-  modulePathIgnorePatterns: ['<rootDir>/cypress/'],
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testEnvironment: 'jsdom',
-};
+  moduleDirectories: ['node_modules', '<rootDir>/'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  testEnvironment: 'jest-environment-jsdom',
+});
 
-module.exports = createJestConfig(customJestConfig);
+module.exports = config;
