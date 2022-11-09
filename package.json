@@ -44,7 +44,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.12",
+    "@heroicons/react": "^2.0.13",
     "daisyui": "^2.33.0",
     "next": "^13.0.0",
     "next-api-handler": "^0.3.2",
