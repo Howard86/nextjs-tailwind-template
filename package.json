@@ -55,7 +55,7 @@
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
     "@next/bundle-analyzer": "^13.0.0",
-    "@tailwindcss/typography": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.8",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/node": "^18.11.9",
