@@ -1,6 +1,9 @@
 {
   "name": "nextjs-template",
   "version": "1.4.0",
+  "engines": {
+    "node": ">=16"
+  },
   "description": "Opinionated Next.js template configured with TypeScript, Chakra UI, Redux Toolkit and other devtools",
   "repository": {
     "type": "git",
