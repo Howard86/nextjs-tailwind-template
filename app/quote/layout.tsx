@@ -1,4 +1,4 @@
-import { ChildrenProps } from 'react';
+import type { ChildrenProps } from 'react';
 import Link from 'next/link';
 
 export default function QuoteLayout({ children }: ChildrenProps) {

@@ -1,4 +1,4 @@
-import { ChildrenProps } from 'react';
+import type { ChildrenProps } from 'react';
 
 const Head = ({ children }: ChildrenProps) => children;
 

@@ -1,9 +1,9 @@
-import { ChildrenProps } from 'react';
+import type { ChildrenProps } from 'react';
 
 import Footer from './Footer';
 import Header from './Header';
 
-import '@/styles/globals.css';
+import '../src/styles/globals.css';
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'true') {
   import('../mocks');
