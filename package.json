@@ -50,7 +50,7 @@
     "@heroicons/react": "^2.0.13",
     "daisyui": "^2.42.1",
     "next": "^13.0.5",
-    "next-api-handler": "^0.3.2",
+    "next-api-handler": "^0.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
