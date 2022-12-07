@@ -4723,10 +4723,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-api-handler@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/next-api-handler/-/next-api-handler-0.3.2.tgz#833033befb78c8a89e9ba14b17da2a43d2d55e75"
-  integrity sha512-l+rrq0urzbkXllBS/mGPkVIajaalS+aLO+oYLryHPG4LhTvapFCksW7kf1jo/kR7GZiyqEwX2B3n48q1kPCW0g==
+next-api-handler@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/next-api-handler/-/next-api-handler-0.4.3.tgz#878cc546304b2e4aa7f9b0d6096c8780ff3a8b06"
+  integrity sha512-Oyz364UNoHWEOYtPUhLkh+NIWdoyw5EA/4eAMDrL6hqMTuwLtCg9KaipxpDONoqqm7qcFJom4BwMfatcewClFw==
 
 next@^13.0.5:
   version "13.0.5"
