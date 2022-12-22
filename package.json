@@ -49,7 +49,7 @@
   "dependencies": {
     "@heroicons/react": "^2.0.13",
     "daisyui": "^2.42.1",
-    "next": "^13.0.5",
+    "next": "^13.0.7",
     "next-api-handler": "^0.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -57,7 +57,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "@next/bundle-analyzer": "^13.0.5",
+    "@next/bundle-analyzer": "^13.0.7",
     "@tailwindcss/typography": "^0.5.8",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -72,7 +72,7 @@
     "eslint": "^8.29.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-next": "^13.0.5",
+    "eslint-config-next": "^13.0.7",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^27.1.6",
