@@ -7,12 +7,14 @@ export default async function QuotePage() {
   const quote = await getRandomQuote({ next: { revalidate: 60 } });
 
   return (
-    <>
+    <div>
       <b>{quote.author}</b>
       <blockquote>{quote.content}</blockquote>
-      <Link className="btn-link btn" href={`/quote/${quote._id}`}>
-        Ping it
-      </Link>
-    </>
+      <div className="flex items-center justify-end">
+        <Link className="btn-link btn" href={`/quote/${quote._id}`}>
+          Ping it
+        </Link>
+      </div>
+    </div>
   );
 }
