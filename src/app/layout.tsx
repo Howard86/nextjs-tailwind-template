@@ -3,10 +3,10 @@ import type { ChildrenProps } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-import '../src/styles/globals.css';
+import '../styles/globals.css';
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'true') {
-  import('../mocks');
+  import('../../mocks');
 }
 
 export default function RootLayout({ children }: ChildrenProps) {

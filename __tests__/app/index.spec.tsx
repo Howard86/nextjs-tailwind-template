@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from 'test-utils';
 
-import Home from '../../app/page';
+import Home from '../../src/app/page';
 
 describe('home', () => {
   it('renders a heading', () => {
