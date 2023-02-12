@@ -7,7 +7,7 @@ export default function Home() {
         </h1>
 
         <p>
-          Get started by editing <code>app/page.tsx</code>
+          Get started by editing <code>src/app/page.tsx</code>
         </p>
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
