@@ -89,7 +89,7 @@
     "lint-staged": "^13.2.0",
     "msw": "^1.1.0",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.4",
     "react-test-renderer": "^18.2.0",
     "start-server-and-test": "^1.15.4",
