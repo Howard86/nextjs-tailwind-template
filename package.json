@@ -4,7 +4,7 @@
   "engines": {
     "node": ">=16"
   },
-  "description": "Opinionated Next.js template configured with TypeScript, Chakra UI, Redux Toolkit and other devtools",
+  "description": "Opinionated Next.js template configured with TypeScript, DaisyUI, Heroicons and other devtools",
   "repository": {
     "type": "git",
     "url": "https://github.com/Howard86/nextjs-template"
@@ -15,13 +15,7 @@
     "template",
     "next.js",
     "typescript",
-    "chakra-ui",
-    "framer-motion",
-    "redux",
-    "redux-toolkit",
-    "rtk-query",
     "jest",
-    "cypress",
     "eslint",
     "prettier",
     "lint-staged",
