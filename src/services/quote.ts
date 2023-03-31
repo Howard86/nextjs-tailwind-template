@@ -1,32 +1,32 @@
-const QUOTE_API_ENDPOINT = 'https://api.quotable.io';
+const QUOTE_API_ENDPOINT = 'https://api.quotable.io'
 
 interface Quote {
-  _id: string;
+  _id: string
   // The quotation text
-  content: string;
+  content: string
   // The full name of the author
-  author: string;
+  author: string
   // The `slug` of the quote author
-  authorSlug: string;
+  authorSlug: string
   // The length of quote (number of characters)
-  length: number;
+  length: number
   // An array of tag names for this quote
-  tags: string[];
+  tags: string[]
 }
 
 const customFetch = async <T>(
   path: string,
-  option?: RequestInit,
+  option?: RequestInit
 ): Promise<T> => {
-  const res = await fetch(`${QUOTE_API_ENDPOINT}/${path}`, option);
+  const res = await fetch(`${QUOTE_API_ENDPOINT}/${path}`, option)
 
-  if (res.status !== 200) throw new Error(`request failed with ${res.status}`);
+  if (res.status !== 200) throw new Error(`request failed with ${res.status}`)
 
-  return res.json() as Promise<T>;
-};
+  return res.json() as Promise<T>
+}
 
 export const getRandomQuote = async (option?: RequestInit) =>
-  customFetch<Quote>('random', option);
+  customFetch<Quote>('random', option)
 
 export const getQuoteById = async (id: string, option?: RequestInit) =>
-  customFetch<Quote>(`quotes/${id}`, option);
+  customFetch<Quote>(`quotes/${id}`, option)

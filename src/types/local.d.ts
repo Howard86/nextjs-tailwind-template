@@ -1,6 +1,6 @@
 declare namespace Local {
   interface HelloApi {
-    name: string;
-    timestamp: number;
+    name: string
+    timestamp: number
   }
 }

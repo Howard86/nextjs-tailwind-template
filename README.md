@@ -7,8 +7,8 @@ Shipped with following developer tools:
 ### Production dependencies
 
 1. [daisyUI](https://daisyui.com)
-2. [Redux Toolkit](https://redux-toolkit.js.org)
-3. [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
+2. [Heroicons](https://heroicons.com)
+3. [Next API Handler](https://next-api-handler.vercel.app)
 
 ### Development dependencies
 
@@ -20,6 +20,7 @@ Shipped with following developer tools:
 6. [Prettier](https://prettier.io/) with [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 7. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
 8. [Commitlint](https://commitlint.js.org/#/)
+9. [MSW](https://mswjs.io/) for mocking API requests
 
 ## Getting Started
 
@@ -33,7 +34,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `src/pages/index.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
 ## Learn More
 

@@ -1,5 +1,5 @@
-import type { ChildrenProps } from 'react';
-import Link from 'next/link';
+import Link from 'next/link'
+import type { ChildrenProps } from 'react'
 
 export default function QuoteLayout({ children }: ChildrenProps) {
   return (
@@ -16,5 +16,5 @@ export default function QuoteLayout({ children }: ChildrenProps) {
         </Link>
       </div>
     </div>
-  );
+  )
 }
