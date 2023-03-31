@@ -3,6 +3,8 @@ import Link from 'next/link'
 
 import { getRandomQuote } from '@/services/quote'
 
+export const revalidate = 60
+
 export default async function QuotePage() {
   const quote = await getRandomQuote({ next: { revalidate: 60 } })
 
