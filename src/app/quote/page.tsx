@@ -1,10 +1,10 @@
 /* eslint-disable no-underscore-dangle */
-import Link from 'next/link';
+import Link from 'next/link'
 
-import { getRandomQuote } from '@/services/quote';
+import { getRandomQuote } from '@/services/quote'
 
 export default async function QuotePage() {
-  const quote = await getRandomQuote({ next: { revalidate: 60 } });
+  const quote = await getRandomQuote({ next: { revalidate: 60 } })
 
   return (
     <div>
@@ -16,5 +16,5 @@ export default async function QuotePage() {
         </Link>
       </div>
     </div>
-  );
+  )
 }

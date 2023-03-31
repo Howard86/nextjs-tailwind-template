@@ -1,7 +1,7 @@
-import { RouterBuilder } from 'next-api-handler';
+import { RouterBuilder } from 'next-api-handler'
 
-const router = new RouterBuilder();
+const router = new RouterBuilder()
 
-router.get<Local.HelloApi>(() => ({ name: 'John Doe', timestamp: Date.now() }));
+router.get<Local.HelloApi>(() => ({ name: 'John Doe', timestamp: Date.now() }))
 
-export default router.build();
+export default router.build()

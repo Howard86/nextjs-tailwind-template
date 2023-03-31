@@ -1,12 +1,12 @@
-import type { ChildrenProps } from 'react';
+import '../styles/globals.css'
 
-import Footer from './Footer';
-import Header from './Header';
+import type { ChildrenProps } from 'react'
 
-import '../styles/globals.css';
+import Footer from './Footer'
+import Header from './Header'
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'true') {
-  import('../../mocks');
+  import('../../mocks')
 }
 
 export default function RootLayout({ children }: ChildrenProps) {
@@ -22,5 +22,5 @@ export default function RootLayout({ children }: ChildrenProps) {
         <Footer />
       </body>
     </html>
-  );
+  )
 }

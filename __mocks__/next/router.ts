@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
 export const useRouter = () => ({
   route: '/',
   pathname: '',
@@ -11,4 +10,4 @@ export const useRouter = () => ({
   },
   beforePopState: jest.fn(() => null),
   prefetch: jest.fn(() => null),
-});
+})
