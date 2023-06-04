@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "daisyui": "^2.51.6",
+    "daisyui": "^2.52.0",
     "next": "^13.2.4",
     "next-api-handler": "^0.4.10",
     "react": "^18.2.0",
