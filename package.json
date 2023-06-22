@@ -2,7 +2,7 @@
   "name": "nextjs-template",
   "version": "1.4.0",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "description": "Opinionated Next.js template configured with TypeScript, DaisyUI, Heroicons and other devtools",
   "repository": {
