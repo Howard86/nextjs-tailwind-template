@@ -5,6 +5,6 @@ module.exports = {
   trailingComma: 'es5',
   semi: false,
   bracketSpacing: true,
-  tailwindConfig: './tailwind.config.js',
+  tailwindConfig: './tailwind.config.ts',
   plugins: ['prettier-plugin-tailwindcss'],
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { ResponseComposition, RestContext, RestRequest } from 'msw'
 import { ErrorApiResponse, SuccessApiResponse } from 'next-api-handler'
 

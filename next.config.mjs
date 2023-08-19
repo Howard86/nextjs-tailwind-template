@@ -4,9 +4,6 @@ import createBundleAnalyzerPlugin from '@next/bundle-analyzer'
 const config = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    appDir: true,
-  },
 }
 
 const withBundleAnalyzer = createBundleAnalyzerPlugin({
