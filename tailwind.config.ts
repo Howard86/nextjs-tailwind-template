@@ -1,5 +1,6 @@
-/* eslint-disable global-require */
-module.exports = {
+import type { Config } from 'tailwindcss/types/config'
+
+const config: Config = {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {},
@@ -9,3 +10,5 @@ module.exports = {
     themes: ['light', 'dark'],
   },
 }
+
+export default config
