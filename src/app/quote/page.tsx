@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 import Link from 'next/link'
 
-import { getRandomQuote } from '@/services/quote'
+import { getRandomQuote } from './service'
 
 export const revalidate = 60
 

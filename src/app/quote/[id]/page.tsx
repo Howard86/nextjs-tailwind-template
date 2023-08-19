@@ -1,5 +1,4 @@
-/* eslint-disable no-underscore-dangle */
-import { getQuoteById } from '@/services/quote'
+import { getQuoteById } from '../service'
 
 interface SingleQuotePageProps {
   params?: {
