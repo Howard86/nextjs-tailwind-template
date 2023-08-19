@@ -6,4 +6,5 @@ module.exports = {
   semi: false,
   bracketSpacing: true,
   tailwindConfig: './tailwind.config.js',
+  plugins: ['prettier-plugin-tailwindcss'],
 }

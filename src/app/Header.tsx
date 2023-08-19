@@ -5,7 +5,7 @@ export default function Header() {
     <header className="sticky top-0 bg-base-100 grayscale filter">
       <nav className="navbar mx-auto w-full max-w-screen-lg">
         <div className="flex-1">
-          <Link href="/" className="btn-ghost btn text-xl normal-case">
+          <Link href="/" className="btn btn-ghost text-xl normal-case">
             Logo
           </Link>
         </div>

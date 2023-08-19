@@ -13,7 +13,7 @@ export default async function QuotePage() {
       <b>{quote.author}</b>
       <blockquote>{quote.content}</blockquote>
       <div className="flex items-center justify-end">
-        <Link className="btn-link btn" href={`/quote/${quote._id}`}>
+        <Link className="btn btn-link" href={`/quote/${quote._id}`}>
           Ping it
         </Link>
       </div>
