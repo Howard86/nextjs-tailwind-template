@@ -28,6 +28,7 @@
   "homepage": "https://github.com/Howard86/nextjs-template",
   "scripts": {
     "analyze": "ANALYZE=true next build",
+    "clean": "rm -rf .next node_modules coverage tsconfig.tsbuildinfo",
     "check-all": "yarn type-check && yarn lint && yarn format",
     "type-check": "tsc --noEmit",
     "lint": "TIMING=1 eslint .",
@@ -37,6 +38,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
+    "test:cov": "jest --coverage",
     "test:watch": "jest --watch",
     "prepare": "husky install"
   },

@@ -4,13 +4,15 @@ const createJestConfig = nextJest({
   dir: './',
 })
 
-const config = createJestConfig({
+/** @type {import('jest').Config} */
+const config = {
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   moduleNameMapper: {
     '^@/((?!public).*)$': '<rootDir>/src/$1',
   },
   moduleDirectories: ['node_modules', '<rootDir>/'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jest-environment-jsdom',
-})
+}
 
-module.exports = config
+module.exports = createJestConfig(config)
