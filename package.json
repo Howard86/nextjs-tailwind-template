@@ -51,8 +51,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
     "@next/bundle-analyzer": "^13.4.19",
     "@tailwindcss/typography": "^0.5.10",
     "@testing-library/jest-dom": "^5",
