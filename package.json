@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "daisyui": "^3.5.1",
+    "daisyui": "^3.9.2",
     "next": "^13.4.19",
     "next-api-handler": "^0.4.10",
     "react": "^18.2.0",
