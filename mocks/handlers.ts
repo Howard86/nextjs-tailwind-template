@@ -1,15 +1,10 @@
-import { rest } from 'msw'
+import { http, HttpResponse } from 'msw'
 
-import { generateResponseResolver } from './utils'
-
-const handlers = [
-  rest.get(
-    '/api/hello',
-    generateResponseResolver<Local.HelloApi>({
+export const handlers = [
+  http.get('/api/hello', () =>
+    HttpResponse.json({
       name: 'MOCK_NAME',
       timestamp: Date.now(),
     })
   ),
 ]
-
-export default handlers
