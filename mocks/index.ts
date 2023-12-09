@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires, global-require */
-import type { SetupWorkerApi } from 'msw'
+import { SetupWorkerApi } from 'msw/lib/browser'
 import type { SetupServerApi } from 'msw/lib/node'
 
 if (typeof window === 'undefined') {
